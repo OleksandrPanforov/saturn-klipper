@@ -91,8 +91,8 @@ ABS or ASA would be best to use. Little to no load expected on the printed parts
 #### Z-endstop
 [EE-SX674](https://www.ia.omron.com/data_pdf/cat/ee-sx47_67_ds_e_13_4_csm483.pdf) with 3 pins connector should be wired as 
 
-🟫Brown (GND)<br> 
-🟦Blue (5V)<br>
+🟫Brown (5V)<br> 
+🟦Blue (GND)<br>
 ⬛Black (Signal)
 
 <p align="center">
