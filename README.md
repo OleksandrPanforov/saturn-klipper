@@ -83,7 +83,7 @@ The Elegoo Saturn 1 was released in 2020 with a 8.9" 4k display onboard. By no m
 Important thing to consider when getting a Saturn is the screen model.
 Originally, Saturns were shipped with either PJ089Y2V1 or TM089CFSP01.
 
-> ⚠️ PJ089Y2V<r>5</r> has a different pinout from PJ089Y2V<r>1</r>, so HDMI driver will also be different.
+> ⚠️ PJ089Y2V<span style="color: Red">5</span> has a different pinout from PJ089Y2V<span style="color: Red">1</span>, so HDMI driver will also be different.
 
 #### Printed parts
 ABS or ASA would be best to use. Little to no load expected on the printed parts, however there might be some relatively high temperatures around the UV LED array. 
@@ -91,7 +91,9 @@ ABS or ASA would be best to use. Little to no load expected on the printed parts
 #### Z-endstop
 [EE-SX674](https://www.ia.omron.com/data_pdf/cat/ee-sx47_67_ds_e_13_4_csm483.pdf) with 3 pins connector should be wired as 
 
-<blu>Blue (5V)</blu> <brn>Brown (GND)</brn> <blk>Black (Signal)</blk>
+<span style="background-color: Brown">Brown (GND)</span><br> 
+<span style="background-color: Blue">Blue (5V)</span> <br>
+<span style="background-color: Black">Black (Signal)</span>
 
 <p align="center">
     <img src="./Images/endstop.jpg" alt="Z endstop wiring" />
@@ -177,10 +179,3 @@ That's why I made remix for a half-width Micro. [Nano v6](https://www.printables
 Likely, an image is missing. Check if all the images for the layers are present. 
 ## 7.  Next steps
 At some point I would love to design the same thing without the need of a donor printer. Pretty sure it's not a nearby future matter, but that is in my backlog.
-
-<style>
-r { color: Red }
-blu { background-color: Blue }
-brn { background-color: Brown }
-bla { background-color: Black }
-</style>
