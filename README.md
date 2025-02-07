@@ -154,15 +154,17 @@ When following the manual, keep in mind the MCU is different, refer to [printer.
 
 If you plan to use BTT TFT35, the setup process is [described here](https://github.com/stadie/btt_tft35spi_rpi). 
 
+I highly encourage to set up [Samba](https://pimylifeup.com/raspberry-pi-samba/) to the printer folder of virtual_sdcard, i.e. ~/printer_data/gcodes.
+
 ### Slicer settings
-Import Prusaslicer [config.ini](/Software/config.ini).
+Refer to [UVTools wiki](https://github.com/sn4k3/UVtools/wiki/Setup-PrusaSlicer)
+
+Present [config.ini](/Software/config.ini) is mostly for reference.
 
 ### Slicing
 1. Slice with [Prusaslicer](https://www.prusa3d.com/page/prusaslicer_424/) to .sl1 file.
 2. Open with [UVTools](https://github.com/sn4k3/UVtools).
-3. File -> Convert to -> Klipper -> Klipper (mono).
-4. Extract .zip to your virtual_sdcard, i.e. **~/printer_data/gcodes**.
-5. Start the print from the Mainsail.
+3. File -> Export to upload the folder to path mapped to Samba.
 
 ## 5. Addons
 ### Filter
