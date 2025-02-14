@@ -8,7 +8,8 @@
 4. [Software setup](#4-software-setup)
 5. [Addons](#5-addons)
 6. [Troubleshooting](#6-troubleshooting)
-7. [Next steps](#7-next-steps)
+7. [My experience](#7-my-experience)
+8. [Next steps](#8-next-steps)
 
 ## 1. What and why?
 
@@ -179,5 +180,27 @@ That's why I made remix for a half-width Micro. [Nano v6](https://www.printables
 ## 6. Troubleshooting
 ### Internal error on command:"M1451"
 Likely, an image is missing. Check if all the images for the layers are present. 
-## 7.  Next steps
+## 7. My experience
+It took me some time to pull the trigger on this project. I do like how it turned out, still there were ups and downs along the way. Namely,
+
+🟥 I didn't like
++ Adapting the stock housing. Frankly, Elegoo Saturn 1 is not the most spacious printer out there. 
++ The total price of the printer, accounting for the new components. It was worth it, but it doesn't mean it was cheap. 
+
+🟨 I'm still grasping
++ The new workflow. I used to work with Lychee Slicer for mSLA and Prusa Slicer for FDM, so I'm climbing the learning curve. It is mostly easy, the documentation of both Prusa Slicer and UVTools is amazingly detailed.
++ How long will it take for the LCD to die. My guess is, raising the UVLED array closer to the screen will not help with the lifespan. But how many hours are we talking about, exactly? 
+
+🟩 I absolutely love
++ Klipper. 
++ [mSLA fork](https://github.com/sn4k3/klipper-msla). The setup is well-documented, easy to follow, and [sn4k3](https://github.com/sn4k3) is quick to respond in case of anything confusing. 
++ How easy it is to add stuff. Filter was a breeze to configure, I'm looking into a vat heater and it's much much easier to get the desired behavior than with a proprietary boards.
++ Troubleshooting and extensive logs. The days of guessing why the print was stopped for no apparent reason are gone. 
++ Flexibility of the repairs. Aside from the screen and UV array, I now can throw in whatever spare things I have from my FDM printers, without a need to wait for the manufacturer's support/AliExpress to send me specific parts.
++ Open Source electronics. Sure, there are always ways to reverse-engineer the fix, like with the infamous [backlight always on issue on Saturn](https://blog.honzamrazek.cz/2021/06/fixing-the-backlight-always-on-problem-on-elegoo-saturn/), but it saves time when I don't have to.
+
+🟪 It would be nice to
++ Have more meaningful information on the KlipperScreen. Naturally, it is aimed to FDM, and for the most part it's also good for mSLA.
+
+## 8.  Next steps
 At some point I would love to design the same thing without the need of a donor printer. Pretty sure it's not a nearby future matter, but that is in my backlog.
